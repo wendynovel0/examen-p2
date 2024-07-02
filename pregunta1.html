@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exámen final</title>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.4.2/uicons-thin-rounded/css/uicons-thin-rounded.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.4.2/uicons-thin-straight/css/uicons-thin-straight.css">    
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://dl.dropbox.com/scl/fi/4nn30j87vs0186op4m8q7/coolvetica.css?rlkey=hs28862vtwb7s9npe8c1gnd0w&st=ovg8cken&dl=0">
+    <link rel="stylesheet" href="https://dl.dropbox.com/scl/fi/i422mg9ono1397hqeak5p/typo.css?rlkey=y91kg1vubhv67050phjo000ks&st=49otxd6j&dl=0">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="theme-toggle" aria-label="toggle dark or light mode" type="button">
+                <span class="light-on" title="apaga las luces"><i class="fi fi-ts-moon"></i></span>
+                <span class="light-off" title="enciende las luces"><i class="fi fi-ts-brightness"></i></span>
+            </button>
+
+            <div id="timer">00:15</div>
+            <div id="progressBarContainer">
+                <div id="progressBar"></div>
+            </div>
+
+            <h2>Exámen de cultura general <i class="cp cp-globe-o"></i></h2>
+        </nav>
+    </header>
+
+    <div class="wave-container">
+        <div class="wave2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7b68ee" fill-opacity="1" d="M0,0L24,37.3C48,75,96,149,144,176C192,203,240,181,288,149.3C336,117,384,75,432,90.7C480,107,528,181,576,218.7C624,256,672,256,720,229.3C768,203,816,149,864,149.3C912,149,960,203,1008,197.3C1056,192,1104,128,1152,90.7C1200,53,1248,43,1296,48C1344,53,1392,75,1416,85.3L1440,96L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+        </div>
+        <div class="wave1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#6a5acd" fill-opacity="1" d="M0,0L26.7,0C53.3,0,107,0,160,42.7C213.3,85,267,171,320,202.7C373.3,235,427,213,480,181.3C533.3,149,587,107,640,106.7C693.3,107,747,149,800,138.7C853.3,128,907,64,960,32C1013.3,0,1067,0,1120,26.7C1173.3,53,1227,107,1280,112C1333.3,117,1387,75,1413,53.3L1440,32L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+        </div>
+        <div class="wave">
+            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(186, 85, 211, 1)" offset="0%"></stop><stop stop-color="rgba(186, 85, 211, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,196L34.3,171.5C68.6,147,137,98,206,114.3C274.3,131,343,212,411,261.3C480,310,549,327,617,302.2C685.7,278,754,212,823,212.3C891.4,212,960,278,1029,269.5C1097.1,261,1166,180,1234,155.2C1302.9,131,1371,163,1440,187.8C1508.6,212,1577,229,1646,253.2C1714.3,278,1783,310,1851,343C1920,376,1989,408,2057,392C2125.7,376,2194,310,2263,285.8C2331.4,261,2400,278,2469,253.2C2537.1,229,2606,163,2674,171.5C2742.9,180,2811,261,2880,318.5C2948.6,376,3017,408,3086,392C3154.3,376,3223,310,3291,294C3360,278,3429,310,3497,326.7C3565.7,343,3634,343,3703,285.8C3771.4,229,3840,114,3909,98C3977.1,82,4046,163,4114,220.5C4182.9,278,4251,310,4320,343C4388.6,376,4457,408,4526,359.3C4594.3,310,4663,180,4731,130.7C4800,82,4869,114,4903,130.7L4937.1,147L4937.1,490L4902.9,490C4868.6,490,4800,490,4731,490C4662.9,490,4594,490,4526,490C4457.1,490,4389,490,4320,490C4251.4,490,4183,490,4114,490C4045.7,490,3977,490,3909,490C3840,490,3771,490,3703,490C3634.3,490,3566,490,3497,490C3428.6,490,3360,490,3291,490C3222.9,490,3154,490,3086,490C3017.1,490,2949,490,2880,490C2811.4,490,2743,490,2674,490C2605.7,490,2537,490,2469,490C2400,490,2331,490,2263,490C2194.3,490,2126,490,2057,490C1988.6,490,1920,490,1851,490C1782.9,490,1714,490,1646,490C1577.1,490,1509,490,1440,490C1371.4,490,1303,490,1234,490C1165.7,490,1097,490,1029,490C960,490,891,490,823,490C754.3,490,686,490,617,490C548.6,490,480,490,411,490C342.9,490,274,490,206,490C137.1,490,69,490,34,490L0,490Z"></path></svg>
+        </div>
+    </div>
+
+    <div class="reglas">
+        <div class="descripcion">
+            <div id="quiz-container">
+                <div id="question-container"></div>
+                <div id="options-container" class="d-grid gap-2 col-6 mx-auto">
+                    <!-- Aquí se mostrarán las opciones -->
+                </div>
+            </div>
+
+            <button id="next-button" disabled>Siguiente</button>
+
+            <div id="result-container" style="display:none;">
+                <h3>Resultados del examen</h3>
+                <div class="trofeo">
+                    <i class="fa-solid fa-trophy"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="cp cp-stars sparkle sparkle1"></i>
+                    <i class="cp cp-stars sparkle sparkle2"></i>
+                </div>
+                <p id="score"></p>
+                <p id="message"></p>
+                <button class="btn btn-primary btn-centered" onclick="inicio()">
+                    <span class="icon-container"><i class="fi fi-ts-house-chimney"></i></span>
+                    <span>Salir</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="//pull.cappuccicons.com/cpf.js"></script>
+    <script src="java.js"></script>
+    <script src="https://kit.fontawesome.com/b1becb115c.js" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
